@@ -1,5 +1,23 @@
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
+const themeToggle = document.getElementById("themeToggle");
+const backToTop = document.getElementById("backToTop");
+
+themeToggle.addEventListener("click", () => {
+  const isDark = document.documentElement.dataset.theme !== "dark";
+  document.documentElement.dataset.theme = isDark ? "dark" : "light";
+  themeToggle.textContent = isDark ? "☀" : "☾";
+  themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
+  themeToggle.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+});
+
+const updateBackToTop = () => {
+  backToTop.hidden = window.scrollY < 320;
+};
+
+window.addEventListener("scroll", updateBackToTop, { passive: true });
+updateBackToTop();
 
 const carousel = document.querySelector(".hero-carousel");
 if (carousel) {
@@ -73,11 +91,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 document.getElementById("enquiryForm").addEventListener("submit", (event) => {
   event.preventDefault();
+  const form = event.currentTarget;
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const topic = document.getElementById("topic").value;
   const message = `Hello Sainik Pharmacy College,%0A%0AMy name is ${encodeURIComponent(name)}.%0AMy mobile number is ${encodeURIComponent(phone)}.%0AI would like to enquire about: ${encodeURIComponent(topic)}.%0A%0APlease share the details.`;
-  const whatsappNumber = "919919407985";
+  const whatsappNumber = form.dataset.whatsappNumber;
   const url = `https://wa.me/${whatsappNumber}?text=${message}`;
   window.open(url, "_blank", "noopener,noreferrer");
   document.getElementById("formStatus").textContent = "WhatsApp opened in a new tab. Review your message and press Send.";

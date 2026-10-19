@@ -1,0 +1,65 @@
+{
+  "college": {
+    "fullName": "Sainik Pharmacy College",
+    "shortName": "SPC",
+    "city": "Prayagraj",
+    "state": "Uttar Pradesh",
+    "country": "India",
+    "heroTitle": "SAINIK PHARMACY COLLEGE",
+    "tagline": "Quality Pharmacy Education for a Better Future",
+    "courses": [
+      {
+        "name": "B. Pharm",
+        "approvalCode": "AKTU Code: 1117"
+      },
+      {
+        "name": "D. Pharm",
+        "approvalCode": "BTE Code: 4130"
+      }
+    ],
+    "approvals": [
+      "AICTE, New Delhi",
+      "PCI, New Delhi"
+    ],
+    "affiliations": [
+      "Dr. A.P.J. Abdul Kalam Technical University",
+      "Board of Technical Education, Lucknow"
+    ],
+    "address": {
+      "buildingLocation": "Mai, Devkali, Hanumanganj",
+      "city": "Prayagraj",
+      "state": "Uttar Pradesh",
+      "postalCode": "221505",
+      "fullAddress": "Mai, Devkali, Hanumanganj, Prayagraj, Uttar Pradesh - 221505",
+      "mapQuery": "Sainik Pharmacy College, Mai, Devkali, Hanumanganj, Prayagraj, Uttar Pradesh 221505"
+    },
+    "contact": {
+      "mobileNumbers": [
+        "9919407985",
+        "9454228671",
+        "9919291081"
+      ],
+      "email": "directorspc2020@gmail.com",
+      "website": "https://www.sainikgroup.in"
+    },
+    "websiteSections": [
+      "Home",
+      "About College",
+      "Courses",
+      "Approvals and Affiliations",
+      "Campus and Infrastructure",
+      "Gallery",
+      "Contact Us"
+    ],
+    "features": [
+      "Pharmacy education",
+      "College campus",
+      "Administrative office",
+      "Student and faculty community"
+    ],
+    "assets": {
+      "collegeGroupPhoto": "assests/galler3.png",
+      "collegeBuildingPhoto": "assests/building.jpeg"
+    }
+  }
+}
