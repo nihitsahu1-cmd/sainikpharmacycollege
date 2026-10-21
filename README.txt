@@ -1,4 +1,4 @@
-SAINIK PHARMACY COLLEGE WEBSITE
+SAINIK GROUP OF INSTITUTION WEBSITE
 
 Files:
 - index.html: page content and structure
@@ -16,4 +16,4 @@ Before publishing:
 - The enquiry form opens WhatsApp to 09919407985 (international format +91 9919407985). Confirm that this number is WhatsApp-enabled before publishing.
 - For a live website, upload the three files to your hosting provider.
 
-Design uses an illustrative SPC monogram because no official logo was supplied.
+Design uses an illustrative SGI monogram because no official logo was supplied.

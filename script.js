@@ -226,7 +226,7 @@ document.getElementById("enquiryForm").addEventListener("submit", (event) => {
   const name = document.getElementById("name").value.trim();
   const phone = document.getElementById("phone").value.trim();
   const topic = document.getElementById("topic").value;
-  const message = `Hello Sainik Pharmacy College,%0A%0AMy name is ${encodeURIComponent(name)}.%0AMy mobile number is ${encodeURIComponent(phone)}.%0AI would like to enquire about: ${encodeURIComponent(topic)}.%0A%0APlease share the details.`;
+  const message = `Hello Sainik Group of Institution,%0A%0AMy name is ${encodeURIComponent(name)}.%0AMy mobile number is ${encodeURIComponent(phone)}.%0AI would like to enquire about: ${encodeURIComponent(topic)}.%0A%0APlease share the details.`;
   const whatsappNumber = form.dataset.whatsappNumber;
   const url = `https://wa.me/${whatsappNumber}?text=${message}`;
   window.open(url, "_blank", "noopener,noreferrer");

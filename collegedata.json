@@ -1,11 +1,11 @@
 {
   "college": {
-    "fullName": "Sainik Pharmacy College",
-    "shortName": "SPC",
+    "fullName": "Sainik Group of Institution",
+    "shortName": "SGI",
     "city": "Prayagraj",
     "state": "Uttar Pradesh",
     "country": "India",
-    "heroTitle": "SAINIK PHARMACY COLLEGE",
+    "heroTitle": "SAINIK GROUP OF INSTITUTION",
     "tagline": "Quality Pharmacy Education for a Better Future",
     "courses": [
       {
@@ -31,7 +31,7 @@
       "state": "Uttar Pradesh",
       "postalCode": "221505",
       "fullAddress": "Mai, Devkali, Hanumanganj, Prayagraj, Uttar Pradesh - 221505",
-      "mapQuery": "Sainik Pharmacy College, Mai, Devkali, Hanumanganj, Prayagraj, Uttar Pradesh 221505"
+      "mapQuery": "Sainik Group of Institution, Mai, Devkali, Hanumanganj, Prayagraj, Uttar Pradesh 221505"
     },
     "contact": {
       "mobileNumbers": [
