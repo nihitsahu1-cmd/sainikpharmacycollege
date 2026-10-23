@@ -337,7 +337,7 @@ html[data-theme="dark"] .menu-toggle {
 
 .hero-content {
   position: relative;
-  padding-block: 48px 100px;
+  padding: 48px 390px 100px 0;
 }
 
 .eyebrow {
@@ -451,6 +451,78 @@ html[data-theme="dark"] .menu-toggle {
   margin-top: 20px;
   color: #e3e8ed;
   font-size: 12px;
+}
+
+.hero-hospital-card {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: min(340px, 29%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, .32);
+  border-radius: 8px;
+  background: rgba(7, 24, 43, .78);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, .2);
+  backdrop-filter: blur(10px);
+  transform: translateY(-50%);
+}
+
+.hero-hospital-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--gold);
+  color: var(--navy-deep);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero-hospital-copy {
+  min-width: 0;
+  flex: 1;
+}
+
+.hero-hospital-copy strong,
+.hero-hospital-copy small {
+  display: block;
+}
+
+.hero-hospital-copy strong {
+  color: white;
+  font: 700 15px/1.4 var(--font-heading);
+}
+
+.hero-hospital-copy small {
+  margin-top: 3px;
+  color: #d9e5eb;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.hero-hospital-card > a {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  background: white;
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 800;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.hero-hospital-card > a:hover {
+  transform: translateY(-1px);
+  background: var(--gold-light);
 }
 
 .caption-rule {
@@ -2211,7 +2283,18 @@ html[data-theme="dark"] .hospital-promo-copy > p:not(.eyebrow) {
   }
 
   .hero-content {
-    padding-block: 38px 78px;
+    padding: 38px 0 78px;
+  }
+
+  .hero-hospital-card {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: fit-content;
+    max-width: min(100%, 490px);
+    margin-top: 18px;
+    padding: 11px 14px;
+    transform: none;
   }
 
   .hero h1 {
@@ -2228,6 +2311,23 @@ html[data-theme="dark"] .hospital-promo-copy > p:not(.eyebrow) {
 
   .hero-caption {
     margin-top: 16px;
+  }
+
+  .hero-hospital-card {
+    margin-top: 14px;
+    padding: 9px 10px;
+  }
+
+  .hero-hospital-copy strong {
+    font-size: 10px;
+  }
+
+  .hero-hospital-copy small {
+    font-size: 9px;
+  }
+
+  .hero-hospital-card > a {
+    padding: 8px;
   }
 
   .hero-carousel-controls {
