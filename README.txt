@@ -1,19 +1,37 @@
-SAINIK GROUP OF INSTITUTION WEBSITE
+SAINIK GROUP OF INSTITUTIONS
 
-Files:
-- index.html: page content and structure
-- style.css: all styling and responsive layout
-- script.js: mobile navigation, current year, and WhatsApp enquiry form
+Site files:
+- index.html: group homepage and its content sections
+- institution.html: shared detail-page template (one URL per college)
+- institutions.js: course lists and configurable contact information
+- institution-page.js: renders an institution selected by the college query parameter
+- style.css: visual design, dark theme and responsive layouts
+- script.js: navigation, photo carousel/gallery, theme and enquiry form
+- assests/: existing logo and campus photographs
 
-How to preview:
-1. Keep the three website files and the assests folder together.
-2. Double-click index.html to open it in a browser.
-3. Photos load from the local assests folder; an internet connection is needed for Google Fonts.
+Preview:
+Keep the HTML, JavaScript, CSS and assests folder together. Open index.html
+in a browser, or serve this folder using a static web server. The page uses
+Google Fonts when an internet connection is available.
 
-Before publishing:
-- Confirm the official course names, approvals/accreditation, facilities, fee details and admission dates before adding them.
-- The hero has an automatically rotating photo slider with manual controls, and the gallery displays all 25 photos from the assests folder.
-- The enquiry form opens WhatsApp to 09919407985 (international format +91 9919407985). Confirm that this number is WhatsApp-enabled before publishing.
-- For a live website, upload the three files to your hosting provider.
+Institution detail URLs use this format:
+institution.html?college=sainik-pg-college
+institution.html?college=sainik-law-college
+institution.html?college=sainik-pharmacy-college
+institution.html?college=sainik-iti-college
+institution.html?college=sainik-paramedical-nursing-college
+institution.html?college=sant-ram-lakhan-degree-college
 
-Design uses an illustrative SGI monogram because no official logo was supplied.
+Contact details and courses:
+Edit institutions.js to change the course lists, phone numbers, WhatsApp
+number, email, address and map search. The contact details currently shown
+were carried forward from the previous site and have not been independently
+verified. Confirm them before publishing. Do not add approvals, affiliations,
+fees, eligibility, course duration, facilities or social profiles unless
+they have been confirmed by the relevant institution.
+
+Admission enquiry:
+The form validates entries in the visitor's browser and opens a pre-filled
+WhatsApp draft for the visitor to review and send. It does not save or send
+submissions to a server. A backend, CRM, or email service must be configured
+and documented separately if enquiries need to be collected automatically.
