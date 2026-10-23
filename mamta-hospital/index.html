@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about Mamta Hospital and Research Center. Explore hospital information and send an appointment enquiry.">
+  <meta name="theme-color" content="#087f8c">
+  <title>Mamta Hospital and Research Center | Sainik Group of Institutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="hospital.css">
+  <script src="../institutions.js" defer></script>
+  <script src="../script.js" defer></script>
+  <script src="hospital-config.js" defer></script>
+  <script src="hospital.js" defer></script>
+</head>
+<body class="hospital-page">
+  <div class="topbar hospital-topbar">
+    <div class="sg-container topbar-inner">
+      <span>Healthcare information and appointment enquiries</span>
+      <a href="#appointment">Appointment enquiry <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="sg-container header-inner">
+      <a class="brand" href="../index.html" aria-label="Sainik Group of Institutions home">
+        <img src="../assests/logo.jpeg" alt="" width="52" height="52">
+        <span><strong>Sainik Group</strong><small>OF INSTITUTIONS</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#about">About Us</a>
+        <details class="nav-dropdown">
+          <summary>Our Institutions</summary>
+          <div class="dropdown-panel">
+            <a href="../index.html#institutions">All Institutions</a>
+            <a href="../institution.html?college=sainik-pg-college">Sainik PG College</a>
+            <a href="../institution.html?college=sainik-law-college">Sainik Law College</a>
+            <a href="../institution.html?college=sainik-pharmacy-college">Sainik Pharmacy College</a>
+            <a href="../institution.html?college=sainik-iti-college">Sainik ITI College</a>
+            <a href="../institution.html?college=sainik-paramedical-nursing-college">Sainik Paramedical &amp; Nursing College</a>
+            <a href="../institution.html?college=sant-ram-lakhan-degree-college">Sant Ram Lakhan Degree College</a>
+            <a href="index.html" aria-current="page">Mamta Hospital and Research Center</a>
+          </div>
+        </details>
+        <a href="#departments">Departments</a>
+        <a href="#services">Services</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-apply" href="#appointment">Appointment enquiry <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch theme">◐</button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hospital-hero" id="home">
+      <div class="sg-container hospital-hero-grid">
+        <div class="hospital-hero-copy">
+          <p class="eyebrow"><span></span> HEALTHCARE · CARE · RESEARCH</p>
+          <h1>Welcome to <em>Mamta Hospital and Research Center</em></h1>
+          <p class="hospital-hero-lead">Explore hospital information and connect with the team for enquiries. Please confirm current services, availability and appointment details directly with the hospital.</p>
+          <div class="hero-actions">
+            <a class="button hospital-button" href="#appointment">Make an appointment enquiry <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline hospital-outline" href="#about-hospital">About the hospital</a>
+          </div>
+          <p class="hospital-verification">Hospital information is being updated. Unconfirmed details are clearly marked.</p>
+        </div>
+        <div class="hospital-hero-art" role="img" aria-label="Decorative healthcare illustration; hospital photograph to be added">
+          <div class="medical-cross" aria-hidden="true"><span></span><span></span></div>
+          <div class="hero-art-note"><span class="hero-art-pulse" aria-hidden="true">+</span><span><strong>Care with clarity</strong><small>Verified information will be added here</small></span></div>
+          <span class="hero-art-orbit hero-art-orbit-one" aria-hidden="true"></span>
+          <span class="hero-art-orbit hero-art-orbit-two" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hospital-about" id="about-hospital">
+      <div class="sg-container hospital-about-grid">
+        <div>
+          <p class="eyebrow"><span></span> ABOUT THE HOSPITAL</p>
+          <h2>Care information, <em>all in one place.</em></h2>
+        </div>
+        <div class="hospital-copy">
+          <p id="hospitalAbout">Information about Mamta Hospital and Research Center will be added after it has been confirmed by the hospital.</p>
+          <p class="hospital-note">This website does not provide medical advice. For urgent medical needs, contact local emergency services or a qualified healthcare professional.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hospital-tint-section" id="departments">
+      <div class="sg-container">
+        <div class="hospital-section-heading">
+          <div><p class="eyebrow"><span></span> MEDICAL DEPARTMENTS</p><h2>Find the right <em>department.</em></h2></div>
+          <p>Department names and descriptions will be published once confirmed by the hospital.</p>
+        </div>
+        <div class="hospital-card-grid" id="departmentCards" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="medical-team">
+      <div class="sg-container">
+        <div class="hospital-section-heading">
+          <div><p class="eyebrow"><span></span> DOCTORS &amp; MEDICAL TEAM</p><h2>Meet the <em>care team.</em></h2></div>
+          <p>Names, roles and qualifications will be displayed only after they are verified with the hospital.</p>
+        </div>
+        <div class="hospital-card-grid hospital-team-grid" id="doctorCards" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section hospital-tint-section" id="services">
+      <div class="sg-container">
+        <div class="hospital-section-heading">
+          <div><p class="eyebrow"><span></span> HEALTHCARE SERVICES</p><h2>Services and <em>support.</em></h2></div>
+          <p>Current services are not yet confirmed. Please contact the hospital for reliable, up-to-date information.</p>
+        </div>
+        <div class="hospital-card-grid" id="serviceCards" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="facilities">
+      <div class="sg-container hospital-two-column">
+        <div>
+          <p class="eyebrow"><span></span> HOSPITAL FACILITIES</p>
+          <h2>Facilities to be <em>confirmed.</em></h2>
+          <p class="hospital-copy">Information about facilities and infrastructure will be added after it is verified. Contact Mamta Hospital and Research Center to ask about the facilities relevant to your needs.</p>
+        </div>
+        <div class="hospital-placeholder-panel">
+          <span class="hospital-placeholder-icon" aria-hidden="true">+</span>
+          <h3>Facility information is being updated</h3>
+          <div class="hospital-facility-list" id="hospitalFacilities" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hospital-research" id="research">
+      <div class="sg-container hospital-research-grid">
+        <div class="research-mark" aria-hidden="true"><span>R</span><i></i><i></i><i></i></div>
+        <div>
+          <p class="eyebrow eyebrow-light"><span></span> EVIDENCE · CURIOSITY · CARE</p>
+          <h2>Research and <em>Innovation</em></h2>
+          <p id="researchFocus">Research focus: placeholder content. The hospital's research activities, laboratories, collaborations and projects have not yet been confirmed. This section is editable and should be updated only with information approved by the hospital.</p>
+          <a class="text-link hospital-research-link" href="#contact">Ask about research information <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hospital-patient-care" id="patient-care">
+      <div class="sg-container hospital-patient-card">
+        <div class="patient-care-icon" aria-hidden="true">♡</div>
+        <div>
+          <p class="eyebrow"><span></span> PATIENT CARE</p>
+          <h2>Clear information supports <em>better conversations.</em></h2>
+          <p>Please confirm your care options, appointment availability and any preparation instructions directly with the hospital. Do not share sensitive medical information through this general enquiry form.</p>
+        </div>
+        <a class="button hospital-button" href="#appointment">Send an enquiry <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="sg-container">
+        <div class="hospital-section-heading">
+          <div><p class="eyebrow"><span></span> HOSPITAL GALLERY</p><h2>A look at the <em>hospital.</em></h2></div>
+          <p>Hospital photographs will be added once approved images are available.</p>
+        </div>
+        <div class="hospital-gallery" id="hospitalGallery" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section hospital-tint-section" id="appointment">
+      <div class="sg-container hospital-appointment-grid">
+        <div class="hospital-contact-copy">
+          <p class="eyebrow"><span></span> APPOINTMENT ENQUIRY</p>
+          <h2>How can we <em>help you?</em></h2>
+          <p>Send an enquiry to prepare your details. No appointment is booked or request sent from this page until an approved hospital backend is connected.</p>
+          <div class="hospital-contact-list" id="hospitalContactDetails"></div>
+        </div>
+        <form class="contact-form hospital-form" id="appointmentForm" novalidate>
+          <h3>Appointment enquiry</h3>
+          <p>For general appointment enquiries only. Do not include private medical or emergency information.</p>
+          <div class="form-grid">
+            <label>Patient name<input name="patientName" type="text" autocomplete="name" placeholder="Your full name" required></label>
+            <label>Mobile number<input name="mobile" type="tel" inputmode="tel" autocomplete="tel" placeholder="e.g. 9876543210" required></label>
+            <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            <label>Select department<select name="department" required><option value="">Choose a department</option></select></label>
+            <label class="form-wide">Preferred appointment date<input name="appointmentDate" type="date" required></label>
+            <label class="form-wide">Message <span class="optional-label">(optional)</span><textarea name="message" rows="4" maxlength="1000" placeholder="General enquiry only"></textarea></label>
+          </div>
+          <button class="button hospital-button" type="submit">Validate enquiry details <span aria-hidden="true">→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <small class="form-disclaimer">This form does not send or store information and does not confirm an appointment. Backend integration is required before appointment requests can be accepted.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="section hospital-location" id="contact">
+      <div class="sg-container hospital-location-grid">
+        <div>
+          <p class="eyebrow"><span></span> CONTACT &amp; LOCATION</p>
+          <h2>Plan your <em>visit.</em></h2>
+          <p class="hospital-copy">Contact and location information will appear here when verified and configured.</p>
+          <div class="hospital-contact-list" id="hospitalLocationDetails"></div>
+          <a class="button hospital-button hospital-map-link" id="hospitalMapLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Open directions <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hospital-map-frame">
+          <iframe id="hospitalMap" title="Map for Mamta Hospital and Research Center" loading="lazy" referrerpolicy="no-referrer-when-downgrade" hidden></iframe>
+          <p id="hospitalMapPlaceholder">Map location will be shown when a verified location is configured.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="sg-container footer-main">
+      <div class="footer-brand-block">
+        <a class="brand footer-brand" href="../index.html"><img src="../assests/logo.jpeg" alt="" width="48" height="48"><span><strong>Sainik Group</strong><small>OF INSTITUTIONS</small></span></a>
+        <p>Mamta Hospital and Research Center. Hospital information should be confirmed directly before relying on it.</p>
+      </div>
+      <div class="footer-column"><h2>Explore</h2><a href="../index.html">Sainik Group home</a><a href="#about-hospital">About the hospital</a><a href="#departments">Departments</a><a href="#services">Healthcare services</a><a href="#research">Research and Innovation</a><a href="#gallery">Hospital gallery</a><a href="#contact">Contact &amp; location</a></div>
+      <div class="footer-column"><h2>Appointment</h2><a href="#appointment">Appointment enquiry</a><a href="../index.html#institutions">Explore the six colleges</a><a href="#patient-care">Patient care information</a></div>
+    </div>
+    <div class="sg-container footer-bottom"><span>© <span id="year"></span> Sainik Group of Institutions</span><span>Mamta Hospital and Research Center</span><span class="developer-credit">Designed &amp; Developed by <strong>Pinweb Pvt Ltd</strong></span></div>
+  </footer>
+</body>
+</html>

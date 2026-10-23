@@ -2054,6 +2054,87 @@ html[data-theme="dark"] .empty-state h1 {
   padding-block: 28px;
 }
 
+.hospital-promo-section {
+  padding-block: 0 72px;
+}
+
+.hospital-promo-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 26px;
+  overflow: hidden;
+  padding: clamp(22px, 4vw, 42px);
+  border: 1px solid #cce5e2;
+  background: linear-gradient(110deg, #effaf8, #ffffff 65%, #e4f5f2);
+  box-shadow: 0 16px 42px rgba(7, 92, 115, .08);
+}
+
+.hospital-promo-symbol {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: #087f8c;
+}
+
+.hospital-promo-symbol span {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  border-radius: 8px;
+  background: white;
+}
+
+.hospital-promo-symbol span + span {
+  transform: rotate(90deg);
+}
+
+.hospital-promo-copy .eyebrow span {
+  background: #0e9b9b;
+}
+
+.hospital-promo-copy h2 {
+  margin: 0;
+  color: #075c73;
+  font-size: clamp(22px, 3vw, 32px);
+  line-height: 1.2;
+}
+
+.hospital-promo-copy > p:not(.eyebrow) {
+  margin: 8px 0 0;
+  color: #526c79;
+  font-size: 12px;
+}
+
+.hospital-promo-button {
+  border-color: #087f8c;
+  background: #087f8c;
+  color: #fff;
+}
+
+.hospital-promo-button:hover {
+  border-color: #075c73;
+  background: #075c73;
+  color: #fff;
+}
+
+html[data-theme="dark"] .hospital-promo-card {
+  border-color: #28515c;
+  background: linear-gradient(110deg, #102d39, #172638 65%, #173a46);
+}
+
+html[data-theme="dark"] .hospital-promo-copy h2 {
+  color: #8ad7d4;
+}
+
+html[data-theme="dark"] .hospital-promo-copy > p:not(.eyebrow) {
+  color: var(--muted);
+}
+
 @media (max-width: 1160px) {
   .header-inner {
     gap: 12px;
@@ -2113,7 +2194,7 @@ html[data-theme="dark"] .empty-state h1 {
     font-size: 13px;
   }
 
-  .main-nav > .nav-apply {
+    .main-nav > .nav-apply {
     justify-content: center;
     margin: 10px 0 0;
   }
@@ -2176,6 +2257,15 @@ html[data-theme="dark"] .empty-state h1 {
 
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hospital-promo-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .hospital-promo-button {
+    grid-column: 2;
+    justify-self: start;
   }
 }
 
@@ -2354,6 +2444,16 @@ html[data-theme="dark"] .empty-state h1 {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 25px;
+  }
+
+  .hospital-promo-card {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hospital-promo-button {
+    grid-column: auto;
+    justify-self: start;
   }
 
   .section-heading > p {

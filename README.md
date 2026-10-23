@@ -38,3 +38,19 @@ The form performs browser-side validation and opens a pre-filled WhatsApp
 draft for the visitor to review and send. It does not store or send submissions
 to a server. Connect a backend, CRM or email service separately if automatic
 enquiry collection is required.
+
+## Mamta Hospital and Research Center
+
+The separate hospital page is `mamta-hospital/index.html`. Open that file
+directly when previewing the project from the filesystem; opening the folder
+itself may show a directory listing in some browsers. Its navigation link is
+also present on the homepage and institution detail pages. Edit `mamta-hospital/hospital-config.js`
+to add hospital-approved contact details, departments, doctor profiles and
+qualifications, services, facilities, research information, gallery images,
+opening hours and map location. Keep fields empty until the hospital verifies
+them; the page displays an explicit placeholder in that case.
+
+The appointment enquiry form validates entries in the browser but does not
+send or store them and does not book an appointment. Connect and document an
+approved hospital API, backend, or email/CRM service before accepting
+appointment requests.
